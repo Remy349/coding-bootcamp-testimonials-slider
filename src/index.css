@@ -14,8 +14,73 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  background: url(/src/assets/svg/pattern-curve.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-position: left 0 bottom 0;
+  z-index: -10;
+}
+
+#root {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+.main {
+  width: 90%;
+  max-width: 375px;
+}
+
+.slider {
+  width: 200%;
+  height: 630px;
+}
+
+.slider__section {
+  width: calc(100% / 2);
+}
+
+.slider__section-image {
+  position: relative;
+}
+
+.slider__section-image::before {
+  content: '';
+  position: absolute;
+  background-image: url(/src/assets/svg/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20rem;
+  height: 20rem;
+  top: -2rem;
+  left: -2rem;
+  z-index: -10;
+}
+
+.slider__section-testimonial {
+  position: relative;
+}
+
+.slider__section-testimonial::before {
+  content: '';
+  position: absolute;
+  background-image: url(/src/assets/svg/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3.6rem;
+  height: 5rem;
+  z-index: -5;
 }

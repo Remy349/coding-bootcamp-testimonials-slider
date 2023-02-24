@@ -4,8 +4,8 @@ import data from './testimonials'
 
 function App () {
   return (
-    <main className='main'>
-      <div className='slider'>
+    <main className='main overflow-x-hidden'>
+      <div className='slider flex items-center'>
         {data.map((data) => (
           <Testimonial
             key={data.id}
