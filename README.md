@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Coding bootcamp testimonials slider](https://remy349.github.io/coding-bootcamp-testimonials-slider/)
 
 ## My process
 
